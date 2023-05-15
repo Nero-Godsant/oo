@@ -1,10 +1,9 @@
+from datetime import date
 
-
-class Data:
-
-    def __init__(self, dia, mes, ano):
-        print("{}, {}, {}".format(self))
-        self.d = Data(self)
+data_atual = date.today()
+print(data_atual)
+data_em_texto = '{}/{}/{}'.format(data_atual.day, data_atual.month, data_atual.year)
+print(data_em_texto)
 
 
 
